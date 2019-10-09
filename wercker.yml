@@ -5,11 +5,11 @@ box:
     - 8080
 
 #Build our application using Maven
-  build:
-    steps:
-      - install-packages:
-        packages: maven
-      - script:
-        name: maven build
-        code: mvn clean assembly:assembly
+build:
+  steps:
+    - install-packages:
+      packages: maven
+    - script:
+      name: maven build
+      code: mvn clean assembly:assembly
 
